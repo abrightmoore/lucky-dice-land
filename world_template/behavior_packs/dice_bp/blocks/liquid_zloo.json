@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "twf:liquid_zloo",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:destroy_time": 1000000,
+            "minecraft:explosion_resistance": 1000000,
+            "minecraft:friction": 0.3,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#251d70",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 1.0
+        }
+    }
+}        

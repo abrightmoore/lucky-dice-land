@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.twf_dice.life": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+                    "blend_transition": 0.1,
+                    "blend_via_shortest_path": true,                    
+                    "animations": [ "base_pose" ],
+                    "transitions": [
+                        {
+                            "roll": "query.variant == 1"
+                        }
+                    ]
+
+				},
+				"roll": {
+                    "blend_transition": 0.1,
+                    "blend_via_shortest_path": true,
+					"animations": [ "roll" ],
+                    "transitions": [
+                        {
+                            "default": "query.variant == 0"
+                        }
+                    ]
+
+				}
+                
+			}
+		}
+	}
+}

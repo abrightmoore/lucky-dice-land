@@ -1,0 +1,15 @@
+{
+  "header": {
+    "name": "TWF_LuckyDiceLand",
+    "version": [1, 0, 0],
+    "uuid": "820ddd62-cb79-4b71-fc15-08eaf2cf43a7"
+  },
+  "modules": [
+    {
+      "version": [1, 0, 0],
+      "type": "skin_pack",
+      "uuid": "14e2a229-979c-9b19-9c17-a2e73d40dda3"
+    }
+  ],
+  "format_version": 1
+}

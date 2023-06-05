@@ -1,0 +1,39 @@
+{
+    "format_version": "1.10.0", 
+    "minecraft:client_entity": {
+        "description": {
+            "animations": {
+                "lifecycle": "controller.animation.twf_dice.life",
+                "base_pose": "animation.twf_dice.base_pose",
+                "roll": "animation.twf_dice.roll"
+            }, 
+            "geometry": {
+                "default": "geometry.twf_dice"
+            }, 
+            "identifier": "twf:dice_red", 
+            "materials": {
+                "default": "entity"
+            }, 
+            "render_controllers": [
+                "controller.render.single_texture"
+            ], 
+            "scripts": {
+                "animate": [
+                    "lifecycle"
+                ]
+            },
+            "spawn_egg": {
+                "texture": "twf_dice_red_item"
+            }, 
+            "textures": {
+                "default": "textures/entities/twf_dice",
+                "variant_1": "textures/entities/twf_dice_red_1",
+                "variant_2": "textures/entities/twf_dice_red_2",
+                "variant_3": "textures/entities/twf_dice_red_3",           
+                "variant_4": "textures/entities/twf_dice_red_4",
+                "variant_5": "textures/entities/twf_dice_red_5",
+                "variant_6": "textures/entities/twf_dice_red_6"
+            }
+        }
+    }
+}

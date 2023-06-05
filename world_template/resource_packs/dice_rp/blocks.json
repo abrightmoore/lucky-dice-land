@@ -1,0 +1,274 @@
+{
+    "format_version": [
+        1, 
+        17, 
+        0
+    ],
+    "twf:dice_white_6": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures": {
+                 "down" : "dice_white_1",
+                 "east" : "dice_white_4",
+                 "north" : "dice_white_5",
+                 "south" : "dice_white_2",
+                 "up" : "dice_white_6",
+                 "west" : "dice_white_3"    
+            }
+        
+    },    
+    "twf:dice_white_5": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures": {
+                 "down" : "dice_white_2",
+                 "east" : "dice_white_6",
+                 "north" : "dice_white_4",
+                 "south" : "dice_white_3",
+                 "up" : "dice_white_5",
+                 "west" : "dice_white_1"    
+            }
+        
+    },
+    "twf:dice_white_4": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures":{
+                 "down" : "dice_white_3",
+                 "east" : "dice_white_5",
+                 "north" : "dice_white_6",
+                 "south" : "dice_white_1",
+                 "up" : "dice_white_4",
+                 "west" : "dice_white_2"    
+            }
+        
+    },
+    "twf:dice_white_3": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures": {
+                 "down" : "dice_white_4",
+                 "east" : "dice_white_6",
+                 "north" : "dice_white_5",
+                 "south" : "dice_white_2",
+                 "up" : "dice_white_3",
+                 "west" : "dice_white_4"    
+            }
+        
+    },
+    "twf:dice_white_2": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures": {
+                 "down" : "dice_white_5",
+                 "east" : "dice_white_3",
+                 "north" : "dice_white_1",
+                 "south" : "dice_white_6",
+                 "up" : "dice_white_2",
+                 "west" : "dice_white_5"    
+            }
+        
+    },
+    "twf:dice_white_1": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures": {
+                 "down" : "dice_white_6",
+                 "east" : "dice_white_2",
+                 "north" : "dice_white_3",
+                 "south" : "dice_white_4",
+                 "up" : "dice_white_1",
+                 "west" : "dice_white_5"    
+            }
+        
+    },
+
+    "twf:dice_black_6": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures": {
+                 "down" : "dice_black_1",
+                 "east" : "dice_black_4",
+                 "north" : "dice_black_5",
+                 "south" : "dice_black_2",
+                 "up" : "dice_black_6",
+                 "west" : "dice_black_3"    
+            }
+        
+    },    
+    "twf:dice_black_5": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures": {
+                 "down" : "dice_black_2",
+                 "east" : "dice_black_6",
+                 "north" : "dice_black_4",
+                 "south" : "dice_black_3",
+                 "up" : "dice_black_5",
+                 "west" : "dice_black_1"    
+            }
+        
+    },
+    "twf:dice_black_4": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures":{
+                 "down" : "dice_black_3",
+                 "east" : "dice_black_5",
+                 "north" : "dice_black_6",
+                 "south" : "dice_black_1",
+                 "up" : "dice_black_4",
+                 "west" : "dice_black_2"    
+            }
+        
+    },
+    "twf:dice_black_3": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures": {
+                 "down" : "dice_black_4",
+                 "east" : "dice_black_6",
+                 "north" : "dice_black_5",
+                 "south" : "dice_black_2",
+                 "up" : "dice_black_3",
+                 "west" : "dice_black_4"    
+            }
+        
+    },
+    "twf:dice_black_2": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures": {
+                 "down" : "dice_black_5",
+                 "east" : "dice_black_3",
+                 "north" : "dice_black_1",
+                 "south" : "dice_black_6",
+                 "up" : "dice_black_2",
+                 "west" : "dice_black_5"    
+            }
+        
+    },
+    "twf:dice_black_1": {
+        "isotropic" : true,
+        "sound": "metal", 
+        "textures": {
+                 "down" : "dice_black_6",
+                 "east" : "dice_black_2",
+                 "north" : "dice_black_3",
+                 "south" : "dice_black_4",
+                 "up" : "dice_black_1",
+                 "west" : "dice_black_5"    
+            }
+        
+    },
+  "twf:girder_cross": {
+    "textures": "girder_cross",
+    "sound" : "metal"
+  },
+  "twf:girder_panel": {
+    "textures": "girder_panel",
+    "sound" : "metal"
+  },
+  "twf:girder_grate": {
+    "textures": "girder_grate",
+    "sound" : "metal"
+  },  
+  "twf:girder_wiring": {
+    "textures": "girder_wiring",
+    "sound" : "metal"
+  },
+  "twf:girder_fan": {
+    "textures": "girder_fan",
+    "sound" : "metal"
+  },
+  "twf:girder_fan_slow": {
+    "textures": "girder_fan_slow",
+    "sound" : "metal"
+  },
+  "twf:girder_fan_fast": {
+    "textures": "girder_fan_fast",
+    "sound" : "metal"
+  },
+  "twf:girder_light_fluro": {
+    "textures": "girder_light_fluro",
+    "sound" : "metal"
+  },
+  "twf:girder_light_flicker": {
+    "textures": "girder_light_flicker",
+    "sound" : "metal"
+  },
+  "twf:girder_screen": {
+    "textures": {
+         "down" : "girder_wiring",
+         "side" : "girder_screen",
+         "up" : "girder_panel"
+    },
+    "sound" : "metal"
+  },
+  "twf:girder_screen_prompt": {
+    "textures": {
+         "down" : "girder_wiring",
+         "side" : "girder_screen_prompt",
+         "up" : "girder_panel"
+    },
+    "sound" : "metal"
+  },
+  "twf:liquid_gloo": {
+    "textures": "liquid_gloo",
+    "sound" : "metal"
+  },
+  "twf:liquid_floo": {
+    "textures": "liquid_floo",
+    "sound" : "metal"
+  },
+  "twf:liquid_ploo": {
+    "textures": "liquid_ploo",
+    "sound" : "metal"
+  },
+  "twf:liquid_sloo": {
+    "textures": "liquid_sloo",
+    "sound" : "metal"
+  },
+  "twf:liquid_zloo": {
+    "textures": "liquid_zloo",
+    "sound" : "metal"
+  },
+  "twf:plate_dimples": {
+    "textures": "plate_dimples",
+    "sound" : "metal"
+  },
+  "twf:plate_light": {
+    "textures": "plate_light",
+    "sound" : "metal"
+  },
+  "twf:girder_pipe_y": {
+    "textures": {
+         "down" : "girder_pipe_end",
+         "side" : "girder_pipe_y",
+         "up" : "girder_pipe_end"
+    },
+    "sound" : "metal"
+  },
+  "twf:girder_pipe_x": {
+    "textures": {
+         "down" : "girder_pipe_x",
+         "north" : "girder_pipe_x",
+         "south" : "girder_pipe_x",
+         "east" : "girder_pipe_end",
+         "west" : "girder_pipe_end",
+         "up" : "girder_pipe_x"
+    },
+    "sound" : "metal"
+  },
+  "twf:girder_pipe_z": {
+    "textures": {
+         "down" : "girder_pipe_y",
+         "north" : "girder_pipe_end",
+         "south" : "girder_pipe_end",
+         "east" : "girder_pipe_x",
+         "west" : "girder_pipe_x",
+         "up" : "girder_pipe_y"
+    },
+    "sound" : "metal"
+  }    
+}

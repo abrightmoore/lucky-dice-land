@@ -1,0 +1,22 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:block": {
+        "description": {
+            "identifier": "twf:plate_light",
+            "is_experimental": false,
+            "register_to_creative_menu": true
+        },
+        "components": {
+            "minecraft:destroy_time": 16,
+            "minecraft:explosion_resistance": 50,
+            "minecraft:friction": 0.3,
+            "minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:map_color": "#ffffff",
+            "minecraft:block_light_absorption": 0,
+            "minecraft:block_light_emission": 1.0
+        }
+    }
+}        

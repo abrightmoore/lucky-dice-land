@@ -1,0 +1,368 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.twf_red_dice.life": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+                    "blend_transition": 0.1,
+                    "blend_via_shortest_path": true,                    
+                    "animations": [ "base_pose" ],
+                    "transitions": [
+                        {
+                            "roll": "query.variant == 1"
+                        },
+                        {
+                            "eval": "query.mark_variant != 0"
+                        },
+                        {
+                            "default_tick_jitter": "true"
+                        }
+                    ]
+
+				},
+                "suicide": {
+                    "on_entry" : [
+                        "/execute @s ~ ~ ~ /kill @e[type=twf:dice_red,r=1,x=~,y=320,z=~]"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }
+                    ]
+                },                
+				"default_tick": {
+                    "transitions": [
+                        {
+                            "suicide": "math.round(math.random(1, 64)) == 1"
+                        },
+                        {
+                            "default_tick_jitter": "true"
+                        }
+                    ]
+
+				},
+                "default_tick_jitter": {
+                    "transitions": [           
+                        {
+                            "default": "true"
+                        }
+                    ]   
+                },
+                                
+                "eval": {
+                    "on_entry": [
+                        "/particle minecraft:large_explosion  ~ ~1 ~"
+                    ],                    
+                    "transitions": [
+                        {
+                            "total2": "(query.mark_variant + query.skin_id) == 2"
+                        },
+                        {
+                            "total3": "(query.mark_variant + query.skin_id) == 3"
+                        },
+                        {
+                            "total4": "(query.mark_variant + query.skin_id) == 4"
+                        },
+                        {
+                            "total5": "(query.mark_variant + query.skin_id) == 5"
+                        },
+                        {
+                            "total6": "(query.mark_variant + query.skin_id) == 6"
+                        },
+                        {
+                            "total7": "(query.mark_variant + query.skin_id) == 7"
+                        },
+                        {
+                            "total8": "(query.mark_variant + query.skin_id) == 8"
+                        },
+                        {                        
+                            "total9": "(query.mark_variant + query.skin_id) == 9"
+                        },
+                        {
+                            "total10": "(query.mark_variant + query.skin_id) == 10"
+                        },
+                        {
+                            "total11": "(query.mark_variant + query.skin_id) == 11"
+                        },
+                        {
+                            "total12": "(query.mark_variant + query.skin_id) == 12"
+                        },
+                        {
+                            "default": "true"
+                        }
+                    ]
+                },
+          
+                
+                "total2": {
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 2 (double 1)",
+                        "/playsound sounds.dice.two @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default_tick": "true"
+                        }
+                        
+                    ]
+                },
+                "total3": {
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 3",
+                        "/playsound sounds.dice.three @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default_tick": "true"
+                        }
+                    ]
+                },
+                "total4": {                
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 4",
+                        "/playsound sounds.dice.four @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default_tick": "true"
+                        }
+                    ]
+                },
+                "total5": {
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 5",
+                        "/playsound sounds.dice.five @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default_tick": "true"
+                        }
+                    ]
+                },
+                "total6": {
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 6",
+                        "/playsound sounds.dice.six @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default_tick": "true"
+                        }
+                    ]
+                },
+                "total7": {     
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 7",
+                        "/playsound sounds.dice.seven @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default_tick": "true"
+                        }
+                    ]
+                },
+                "total8": {
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 8",
+                        "/playsound sounds.dice.eight @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default_tick": "true"
+                        }
+                    ]
+                },
+                "total9": {
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 9",
+                        "/playsound sounds.dice.nine @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default_tick": "true"
+                        }
+                    ]
+                },
+                "total10": {
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 10",
+                        "/playsound sounds.dice.ten @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default_tick": "true"
+                        }
+                    ]
+                },
+                "total11": {
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 11",
+                        "/playsound sounds.dice.eleven @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                                                {
+                            "default_tick": "true"
+                        }
+
+                    ]
+                },
+                "total12": {
+                    "on_entry": [
+                        "/msg @a[r=16] Total is 12 (double 6)",
+                        "/playsound sounds.dice.twelve @a[r=16] ~ ~ ~ 1.0",
+                        "/event entity @s twf:reset"
+                    ],
+                    "transitions": [
+                        {
+                            "default_tick": "true"
+                        }
+                    ]
+                },
+                "roll": {
+                    "blend_transition": 0.1,
+                    "blend_via_shortest_path": true,
+					"animations": [ "roll" ],
+                    "on_entry": [
+                        "/playsound fall.bone_block @a ~ ~ ~ 1.0",
+                        "/particle minecraft:large_explosion  ~ ~1 ~",                       
+                        "/event entity @s twf:randomise"
+                    ],
+                    "transitions": [
+                        {
+                            "value1": "query.skin_id == 1"
+                        },
+                        {
+                            "value2": "query.skin_id == 2"
+                        },
+                        {
+                            "value3": "query.skin_id == 3"
+                        },
+                        {
+                            "value4": "query.skin_id == 4"
+                        },
+                        {
+                            "value5": "query.skin_id == 5"
+                        },
+                        {
+                            "value6": "query.skin_id == 6"
+                        },
+                        {
+                            "stop": "true"
+                        }
+                        
+                    ],
+                    "on_exit": [
+                        "/playsound land.bone_block @a ~ ~ ~ 1.0"
+                    ]
+				},
+                
+                "value1": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ /event entity @e[rm=0.5,r=2] twf:rolled1"
+                    ],
+                    "transitions": [
+                        {
+
+                            "stop": "true"
+                        }
+                    ],
+                    "on_exit": [
+                        "/playsound random.pop @a ~ ~ ~"
+                    ]
+                },
+                "value2": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ /event entity @e[rm=0.5,r=2] twf:rolled2"
+                    ],
+                    "transitions": [
+                        {
+
+                            "stop": "true"
+                        }
+                    ],
+                    "on_exit": [
+                        "/playsound random.pop @a ~ ~ ~"
+                    ]
+                },
+                "value3": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ /event entity @e[rm=0.5,r=2] twf:rolled3"
+                    ],
+                    "transitions": [
+                        {
+                            "stop": "true"
+                        }
+                    ],
+                    "on_exit": [
+                        "/playsound random.pop @a ~ ~ ~"
+                    ]
+                },
+                "value4": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ /event entity @e[rm=0.5,r=2] twf:rolled4"
+                    ],
+                    "transitions": [
+                        {
+
+                            "stop": "true"
+                        }
+                    ],
+                    "on_exit": [
+                        "/playsound random.pop @a ~ ~ ~"
+                    ]
+                },
+                "value5": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ /event entity @e[rm=0.5,r=2] twf:rolled5"
+                    ],
+                    "transitions": [
+                        {
+
+                            "stop": "true"
+                        }
+                    ],
+                    "on_exit": [
+                        "/playsound random.pop @a ~ ~ ~"
+                    ]
+                },
+                "value6": {
+                    "on_entry": [
+                        "/execute @s ~ ~ ~ /event entity @e[rm=0.5,r=2] twf:rolled6"
+                    ],
+                    "transitions": [
+                        {
+
+                            "stop": "true"
+                        }
+                    ],
+                    "on_exit": [
+                        "/playsound random.pop @a ~ ~ ~"
+                    ]
+                },
+               
+                "stop": {
+                    "on_entry": [
+                        "/event entity @s twf:stop"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "query.variant == 0"
+                        }
+                    ]
+                }
+                
+			}
+		}
+	}
+}

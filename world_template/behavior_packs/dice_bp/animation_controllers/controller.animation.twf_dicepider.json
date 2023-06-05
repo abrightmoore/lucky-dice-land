@@ -1,0 +1,64 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.twf_dicepider.life": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+                    "transitions": [
+                        {
+                            "destroy": "math.round(math.random(1, 64)) == 1"
+                        },
+                        {
+                            "suicide": "math.round(math.random(1, 64)) == 1"
+                        },
+                        {
+                            "default": "true"
+                        }
+                    ]
+				},
+                "suicide": {
+                    "on_entry" : [
+                        "/execute @s ~ ~ ~ /kill @e[type=twf:dicepider,r=1,x=~,y=320,z=~]"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }
+                    ]
+                },
+                "destroy": {
+                    "on_entry": [
+                        "/particle minecraft:large_explosion  ~ ~1 ~",
+                        "/particle minecraft:large_explosion  ~1 ~ ~1",
+                        "/particle minecraft:large_explosion  ~-1 ~ ~-1",
+                        "/particle minecraft:large_explosion  ~-1 ~ ~1",
+                        "/particle minecraft:large_explosion  ~1 ~ ~-1",
+                        "/particle twf:ring  ~ ~8 ~",
+                        "/particle twf:ring  ~ ~16 ~",
+                        "/particle twf:ring  ~ ~32 ~",
+                        "/particle twf:ring  ~ ~64 ~",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_white_1",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_white_2",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_white_3",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_white_4",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_white_5",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_white_6",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_black_1",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_black_2",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_black_3",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_black_4",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_black_5",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~12 ~1 air 0 replace twf:dice_black_6",
+                        "/playsound random.eat @a"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }
+                    ]   
+                }
+			}
+		}
+	}
+}

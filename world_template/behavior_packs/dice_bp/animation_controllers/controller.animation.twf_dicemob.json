@@ -1,0 +1,435 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.twf_dicemob.life": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+                    "transitions": [
+                        {
+                            "default": "math.round(math.random(1, 8)) == 1"
+                        },
+                        {
+                            "bud": "math.round(math.random(1, 8)) == 100000"
+                        },
+                        {
+                            "suicide": "math.round(math.random(1, 640)) == 1"
+                        },                        
+                        {
+                            "build": "true"
+                        }
+                    ]
+
+				},
+                "suicide": {
+                    "on_entry" : [
+                        "/particle twf:rainbow_flame ~1 ~ ~1",
+                        "/particle twf:rainbow_flame ~-1 ~ ~-1",
+                        "/particle twf:rainbow_flame ~-1 ~ ~1",
+                        "/particle twf:rainbow_flame ~1 ~ ~-1",
+                        "/particle twf:rainbow_flame ~ ~2 ~",
+                        "/particle twf:rainbow_flame ~ ~4 ~",
+                        "/particle twf:rainbow_flame ~ ~6 ~",
+                        "/effect @s[type=twf:npc_dicemob,r=0.5,x=~,y=320,z=~] levitation 30 5 true"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }
+                    ]
+                },
+                
+                "bud": {
+                    "on_entry": [
+                        "/summon twf:npc_dicemob ~ ~6 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }
+                    ]
+                },
+                "build": {
+                    "on_entry": [
+                        "v.random_value = math.random_integer(0, 100000);",
+                        "/setblock ~ ~1 ~ air"
+                    ],
+                    "transitions": [
+                        {
+                            "transmute_red": "v.random_value == 0"
+                        },
+                        {
+                            "build_bridge_1": "v.random_value < 30"
+                        },
+                        {
+                            "build_tower_1": "v.random_value < 50"
+                        },
+                        {
+                            "build_tower_2": "v.random_value < 70"
+                        },                       
+                        {
+                            "build_tower_3": "v.random_value < 95"
+                        },                       
+                        {
+                            "build_tower_4": "v.random_value < 100"
+                        },                       
+                        {
+                            "build_1": "v.random_value < 200"
+                        },
+                        {
+                            "build_black_1": "v.random_value < 300"
+                        },                        
+                        {
+                            "build_2": "v.random_value < 400"
+                        },
+                        {
+                            "build_black_2": "v.random_value < 500"
+                        },                        
+                        {
+                            "build_3": "v.random_value < 600"
+                        },
+                        {
+                            "build_black_3": "v.random_value < 700"
+                        },                        
+                        {
+                            "build_4": "v.random_value < 800"
+                        },
+                        {
+                            "build_black_4": "v.random_value < 900"
+                        },                        
+                        {
+                            "build_5": "v.random_value < 1000"
+                        },
+                        {
+                            "build_black_5": "v.random_value < 1200"
+                        },
+                        {
+                            "build_6": "v.random_value < 1300"
+                        },
+                        {
+                            "build_black_6": "v.random_value < 1400"
+                        },
+                        {
+                            "drop_die": "v.random_value < 1500"
+                        },
+                        {
+                            "default": "true"
+                        }
+                    ]   
+                },
+                "drop_die": {
+                    "on_entry": [
+                        "/summon twf:dice_white",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "transmute_red": {
+                    "on_entry": [
+                        "/summon twf:dice_red",
+                        "/particle twf:rainbow_flame  ~ ~ ~",
+                        "/kill @s"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_1": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_white_1 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_white_3 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_white_5 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_white_4 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_white_2 0 replace air",
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1.1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_2": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_white_2 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_white_3 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_white_4 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_white_5 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_white_1 0 replace air",                        
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1 ~ 0 replace air",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_3": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_white_3 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_white_1 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_white_2 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_white_5 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_white_4 0 replace air",                        
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_4": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_white_4 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_white_2 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_white_3 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_white_5 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_white_1 0 replace air",                        
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_5": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_white_5 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_white_2 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_white_3 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_white_4 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_white_1 0 replace air",                        
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_6": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_white_6 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_white_1 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_white_4 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_white_5 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_white_3 0 replace air",                        
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+
+                "build_black_1": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_black_1 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_black_3 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_black_5 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_black_4 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_black_2 0 replace air",
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1.1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_black_2": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_black_2 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_black_3 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_black_4 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_black_5 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_black_1 0 replace air",                        
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1 ~ 0 replace air",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_black_3": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_black_3 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_black_1 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_black_2 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_black_5 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_black_4 0 replace air",                        
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_black_4": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_black_4 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_black_2 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_black_3 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_black_5 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_black_1 0 replace air",                        
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_black_5": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_black_5 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_black_2 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_black_3 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_black_4 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_black_1 0 replace air",                        
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_black_6": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~ ~ twf:dice_black_6 0 replace air",
+                        "/fill ~-1 ~-1 ~ ~-1 ~-1 ~ twf:dice_black_1 0 replace air",
+                        "/fill ~1 ~-1 ~ ~1 ~-1 ~ twf:dice_black_4 0 replace air",
+                        "/fill ~ ~-1 ~-1 ~ ~-1 ~-1 twf:dice_black_5 0 replace air",
+                        "/fill ~ ~-1 ~1 ~ ~-1 ~1 twf:dice_black_3 0 replace air",                        
+                        "/execute @s ~ ~ ~ /tp @s ~ ~1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+
+                "build_tower_1": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~5 ~ twf:dice_white_1 0 replace air",
+                        "/fill ~-1 ~-2 ~-1 ~1 ~-1 ~1 twf:dice_white_3 0 replace air",
+                        "/fill ~-2 ~-1 ~-2 ~2 ~ ~2 twf:dice_white_4 0 replace air",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~4 ~1 twf:dice_black_6 0 replace air",
+                        "/fill ~-1 ~ ~ ~1 ~3 ~ air 0 replace twf:dice_black_6",
+                        "/fill ~ ~ ~-1 ~ ~3 ~1 air 0 replace twf:dice_black_6",
+                        "/fill ~ ~ ~ ~ ~3 ~ air 0 replace twf:dice_white_1",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },     
+                
+                "build_tower_2": {
+                    "on_entry": [
+                        "/fill ~ ~ ~ ~ ~5 ~ twf:dice_black_1 0 replace air",
+                        "/fill ~-1 ~-2 ~-1 ~1 ~-1 ~1 twf:dice_black_3 0 replace air",
+                        "/fill ~-2 ~-1 ~-2 ~2 ~ ~2 twf:dice_black_4 0 replace air",
+                        "/fill ~-1 ~-1 ~-1 ~1 ~4 ~1 twf:dice_white_6 0 replace air",
+                        "/fill ~-1 ~ ~ ~1 ~3 ~ air 0 replace twf:dice_white_6",
+                        "/fill ~ ~ ~-1 ~ ~3 ~1 air 0 replace twf:dice_white_6",
+                        "/fill ~ ~ ~ ~ ~3 ~ air 0 replace twf:dice_black_1",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_tower_3": {
+                    "on_entry": [
+                        "/fill ~-3 ~-2 ~-3 ~3 ~-2 ~3 twf:dice_black_4 0 replace air",
+                        "/fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 twf:dice_white_3 0 replace air",
+                        "/fill ~-1 ~ ~-1 ~1 ~ ~1 twf:dice_black_2 0 replace air",
+                        "/fill ~ ~1 ~ ~ ~1 ~ twf:dice_white_1 0 replace air",
+                        "/execute @s ~ ~ ~ /tp @s ~ ~2.1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_tower_4": {
+                    "on_entry": [
+                        "/fill ~-3 ~ ~-3 ~3 ~ ~3 twf:dice_black_4 0 replace air",
+                        "/fill ~-3 ~1 ~-3 ~2 ~1 ~2 twf:dice_white_3 0 replace air",
+                        "/fill ~-2 ~2 ~-2 ~2 ~2 ~2 twf:dice_black_2 0 replace air",
+                        "/fill ~-2 ~3 ~-2 ~1 ~3 ~1 twf:dice_white_1 0 replace air",
+                        "/execute @s ~ ~ ~ /tp @s ~ ~4.1 ~",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                        
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                },
+                "build_bridge_1": {
+                    "on_entry": [
+                        "/fill ~-3 ~-2 ~ ~3 ~-1 ~ twf:dice_black_2 0 replace air",
+                        "/fill ~ ~-2 ~-3 ~ ~-1 ~3 twf:dice_white_2 0 replace air",
+                        "/particle twf:rainbow_flame  ~ ~ ~"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "true"
+                        }                    
+                    ]
+                }                  
+
+			}
+		}
+	}
+}

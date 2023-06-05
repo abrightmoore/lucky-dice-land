@@ -1,0 +1,72 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"twf:dicepider": {
+				"events": {
+					"ambient": "mob.spider.say",
+					"death": "mob.spider.death",
+					"hurt": "mob.spider.say",
+					"step": {
+						"pitch": [0.9, 1.1],
+						"sound": "mob.spider.step",
+						"volume": 0.35
+					}
+				},
+				"pitch": [0.8, 1.2],
+				"volume": 1
+			}
+		}
+	},
+    "individual_event_sounds" : {
+     "events" :{
+	    "sounds.dice.two.a": {"sound": "sounds.dice.two.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.two.b": {"sound": "sounds.dice.two.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.two.c": {"sound": "sounds.dice.two.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.two.d": {"sound": "sounds.dice.two.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+        "sounds.dice.two.e": {"sound": "sounds.dice.two.e", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.three.a": {"sound": "sounds.dice.three.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.three.b": {"sound": "sounds.dice.three.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.three.c": {"sound": "sounds.dice.three.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.three.d": {"sound": "sounds.dice.three.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+ 	    "sounds.dice.four.a": {"sound": "sounds.dice.four.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.four.b": {"sound": "sounds.dice.four.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.four.c": {"sound": "sounds.dice.four.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.four.d": {"sound": "sounds.dice.four.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+ 	    "sounds.dice.five.a": {"sound": "sounds.dice.five.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.five.b": {"sound": "sounds.dice.five.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.five.c": {"sound": "sounds.dice.five.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.five.d": {"sound": "sounds.dice.five.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.six.a": {"sound": "sounds.dice.six.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.six.b": {"sound": "sounds.dice.six.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.six.c": {"sound": "sounds.dice.six.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.six.d": {"sound": "sounds.dice.six.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+        "sounds.dice.six.e": {"sound": "sounds.dice.six.e", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+ 	    "sounds.dice.seven.a": {"sound": "sounds.dice.seven.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.seven.b": {"sound": "sounds.dice.seven.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.seven.c": {"sound": "sounds.dice.seven.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.seven.d": {"sound": "sounds.dice.seven.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+ 	    "sounds.dice.eight.a": {"sound": "sounds.dice.eight.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.eight.b": {"sound": "sounds.dice.eight.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.eight.c": {"sound": "sounds.dice.eight.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.eight.d": {"sound": "sounds.dice.eight.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+ 	    "sounds.dice.nine.a": {"sound": "sounds.dice.nine.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.nine.b": {"sound": "sounds.dice.nine.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.nine.c": {"sound": "sounds.dice.nine.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.nine.d": {"sound": "sounds.dice.nine.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+ 	    "sounds.dice.ten.a": {"sound": "sounds.dice.ten.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.ten.b": {"sound": "sounds.dice.ten.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.ten.c": {"sound": "sounds.dice.ten.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.ten.d": {"sound": "sounds.dice.ten.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.eleven.a": {"sound": "sounds.dice.eleven.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.eleven.b": {"sound": "sounds.dice.eleven.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.eleven.c": {"sound": "sounds.dice.eleven.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.eleven.d": {"sound": "sounds.dice.eleven.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+        "sounds.dice.eleven.e": {"sound": "sounds.dice.eleven.e", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.twelve.a": {"sound": "sounds.dice.twelve.a", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.twelve.b": {"sound": "sounds.dice.twelve.b", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.twelve.c": {"sound": "sounds.dice.twelve.c", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+	    "sounds.dice.twelve.d": {"sound": "sounds.dice.twelve.d", "volume": 1.0, "pitch": 1.0, "stream": "false"},
+        "sounds.dice.twelve.e": {"sound": "sounds.dice.twelve.e", "volume": 1.0, "pitch": 1.0, "stream": "false"}
+     }
+  }    
+}

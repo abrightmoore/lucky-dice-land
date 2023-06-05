@@ -1,0 +1,22 @@
+{
+    "format_version": 2,
+    "metadata":
+    {
+        "authors": [ "abrightmoore", "The World Foundry" ]
+    },
+    "header": {
+        "name": "pack.name",
+        "description": "pack.description",
+        "uuid": "7ca43a05-dfb8-45ed-9903-f4988a790f10",
+        "version": [1, 0, 0],
+        "lock_template_options": true,
+        "base_game_version": [1, 18, 0]
+    },
+    "modules": [
+    {
+        "type": "world_template",
+        "uuid": "44d66099-9d3e-49b9-971d-3443beead79b",
+        "version": [1, 0, 0]
+    }
+    ]
+}

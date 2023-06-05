@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.twf_dice.roll": {
+			"loop": true,
+			"animation_length": 1.04,
+			"bones": {
+				"die": {
+					"rotation": {
+						"0.12": [320, 320, 320],
+						"0.52": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, 12, 0],
+						"0.52": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.twf_dice.base_pose": {
+			"loop": "hold_on_last_frame"
+		}
+	}
+}

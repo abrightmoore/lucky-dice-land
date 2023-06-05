@@ -1,0 +1,242 @@
+{
+   "num_mip_levels" : 4,
+   "padding" : 8,
+   "resource_pack_name" : "dice_rp",
+   "texture_data" : {
+      "dice_white_1" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_1"
+      },
+      "dice_white_2" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_2"
+      },
+      "dice_white_3" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_3"
+      },
+      "dice_white_4" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_4"
+      },
+      "dice_white_5" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_5"
+      },
+      "dice_white_6" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_6"
+      },
+
+      "dice_black_1" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_black_1"
+      },
+      "dice_black_2" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_black_2"
+      },
+      "dice_black_3" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_black_3"
+      },
+      "dice_black_4" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_black_4"
+      },
+      "dice_black_5" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_black_5"
+      },
+      "dice_black_6" : {
+         "textures" : "textures/blocks/twf_dice_white/twf_dice_black_6"
+      },
+        "girder_cross": {
+          "textures": [
+            {
+              "variations": [
+                {
+                  "path": "textures/blocks/girder_cross/a",
+                  "weight": 100
+                },
+                {
+                  "path": "textures/blocks/girder_cross/b",
+                  "weight": 20
+                },
+                {
+                  "path": "textures/blocks/girder_cross/c",
+                  "weight": 10
+                },
+                {
+                  "path": "textures/blocks/girder_panel/a",
+                  "weight": 3
+                },
+                {
+                  "path": "textures/blocks/girder_panel/b",
+                  "weight": 2
+                },
+                {
+                  "path": "textures/blocks/girder_panel/c",
+                  "weight": 1
+                },
+                {
+                  "path": "textures/blocks/girder_grate/a",
+                  "weight": 1
+                },
+                {
+                  "path": "textures/blocks/girder_grate/b",
+                  "weight": 1
+                },
+                {
+                  "path": "textures/blocks/girder_grate/c",
+                  "weight": 1
+                },
+                {
+                  "path": "textures/blocks/girder_wiring/a",
+                  "weight": 1
+                },
+                {
+                  "path": "textures/blocks/girder_wiring/b",
+                  "weight": 1
+                },
+                {
+                  "path": "textures/blocks/girder_wiring/c",
+                  "weight": 1
+                },
+                {
+                  "path": "textures/blocks/girder_machinery/a",
+                  "weight": 5
+                },
+                {
+                  "path": "textures/blocks/girder_machinery/b",
+                  "weight": 3
+                },
+                {
+                  "path": "textures/blocks/girder_machinery/c",
+                  "weight": 2
+                },
+                {
+                  "path": "textures/blocks/girder_fan/a",
+                  "weight": 1
+                },
+                {
+                  "path": "textures/blocks/girder_fan_fast/a",
+                  "weight": 1
+                },
+                {
+                  "path": "textures/blocks/girder_fan_slow/a",
+                  "weight": 1
+                }
+              ]
+        }
+      ]
+    },
+      "girder_wiring": {
+          "textures": [
+            {
+              "variations": [
+                {
+                  "path": "textures/blocks/girder_wiring/a",
+                  "weight": 3
+                },
+                {
+                  "path": "textures/blocks/girder_wiring/b",
+                  "weight": 2
+                },
+                {
+                  "path": "textures/blocks/girder_wiring/c",
+                  "weight": 1
+                }
+                
+              ]
+        }
+      ]
+    },
+      "girder_panel": {
+          "textures": [
+            {
+              "variations": [
+                {
+                  "path": "textures/blocks/girder_panel/a",
+                  "weight": 3
+                },
+                {
+                  "path": "textures/blocks/girder_panel/b",
+                  "weight": 2
+                },
+                {
+                  "path": "textures/blocks/girder_panel/c",
+                  "weight": 1
+                }
+                
+              ]
+        }
+      ]
+    },
+      "girder_grate": {
+          "textures": [
+            {
+              "variations": [
+                {
+                  "path": "textures/blocks/girder_grate/a",
+                  "weight": 3
+                },
+                {
+                  "path": "textures/blocks/girder_grate/b",
+                  "weight": 2
+                },
+                {
+                  "path": "textures/blocks/girder_grate/c",
+                  "weight": 1
+                }
+                
+              ]
+        }
+      ]
+    },    
+      "girder_fan": {
+          "textures": "textures/blocks/girder_fan/a"
+    },
+      "girder_fan_slow": {
+          "textures": "textures/blocks/girder_fan_slow/a"
+    },
+      "girder_fan_fast": {
+          "textures": "textures/blocks/girder_fan_fast/a"      
+    },
+      "girder_light_fluro": {
+          "textures": "textures/blocks/girder_light_fluro/a"
+    },
+      "girder_light_flicker": {
+          "textures": "textures/blocks/girder_light_flicker/a"
+    },
+      "girder_screen": {
+          "textures": "textures/blocks/girder_screen/a"
+    },
+      "girder_screen_prompt": {
+          "textures": "textures/blocks/girder_screen_prompt/a"
+    },
+      "liquid_gloo": {
+          "textures": "textures/blocks/liquid_gloo/a"
+    },
+      "liquid_floo": {
+          "textures": "textures/blocks/liquid_floo/a"
+    },
+      "liquid_ploo": {
+          "textures": "textures/blocks/liquid_ploo/a"
+    },
+      "liquid_sloo": {
+          "textures": "textures/blocks/liquid_sloo/a"
+    },
+      "liquid_zloo": {
+          "textures": "textures/blocks/liquid_zloo/a"
+    },
+      "plate_dimples": {
+          "textures": "textures/blocks/plate_dimples/a"
+    },
+      "plate_light": {
+          "textures": "textures/blocks/plate_light/a"
+    },
+      "girder_pipe_y": {
+          "textures": "textures/blocks/girder_pipe/y"
+    },    
+      "girder_pipe_x": {
+          "textures": "textures/blocks/girder_pipe/x"
+    },    
+      "girder_pipe_z": {
+          "textures": "textures/blocks/girder_pipe/z"
+    },
+      "girder_pipe_end": {
+          "textures": "textures/blocks/girder_pipe/end"
+    }      
+   },
+   "texture_name" : "atlas.terrain"
+}

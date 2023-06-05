@@ -1,0 +1,15 @@
+{
+    "resource_pack_name": "dice_rp", 
+    "texture_data": {
+        "twf_dice_white_item": {
+            "textures": "textures/items/twf_dice_white_item"
+        },
+        "twf_dice_red_item": {
+            "textures": "textures/items/twf_dice_red_item"
+        },        
+        "twf_dice_mob_spawn": {
+            "textures": "textures/items/twf_dice_mob_spawn"
+        }        
+    }, 
+    "texture_name": "atlas.items"
+}

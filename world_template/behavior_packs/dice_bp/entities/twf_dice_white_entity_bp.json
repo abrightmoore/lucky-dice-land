@@ -1,0 +1,316 @@
+{
+    "format_version": "1.17.0", 
+    "minecraft:entity": {
+        "component_groups": {
+            "twf:colour_1": {
+                "minecraft:skin_id": {"value": 1}
+            },
+            "twf:colour_2": {
+                "minecraft:skin_id": {"value": 2}
+            },
+            "twf:colour_3": {
+                "minecraft:skin_id": {"value": 3}
+            },
+            "twf:colour_4": {
+                "minecraft:skin_id": {"value": 4}
+            },
+            "twf:colour_5": {
+                "minecraft:skin_id": {"value": 5}
+            },
+            "twf:colour_6": {
+                "minecraft:skin_id": {"value": 6}
+            },
+            "twf:rolling": {
+                "minecraft:variant": {"value": 1}
+            },
+            "twf:stopped": {
+                "minecraft:variant": {"value": 0}
+            },
+            "twf:event_rolled1": {
+                "minecraft:mark_variant": {"value": 1}
+            },
+            "twf:event_rolled2": {
+                "minecraft:mark_variant": {"value": 2}
+            },
+            "twf:event_rolled3": {
+                "minecraft:mark_variant": {"value": 3}
+            },
+            "twf:event_rolled4": {
+                "minecraft:mark_variant": {"value": 4}
+            },
+            "twf:event_rolled5": {
+                "minecraft:mark_variant": {"value": 5}
+            },
+            "twf:event_rolled6": {
+                "minecraft:mark_variant": {"value": 6}
+            },
+            "twf:event_reset": {
+                "minecraft:mark_variant": {"value": 0}
+            }            
+            
+        }, 
+        "components": {
+            "minecraft:health": { "value": 1, "max": 1, "min": 0 },
+            "minecraft:custom_hit_test": {
+                "hitboxes": [
+                    {
+                        "height": 0.5, 
+                        "pivot": [
+                            0.25, 
+                            0.25, 
+                            0.25
+                        ], 
+                        "width": 0.5
+                    }
+                ]
+            }, 
+            "minecraft:skin_id": {"value": 0},
+            "minecraft:mark_variant": {"value": 0},
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "on_interact": {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "player"
+                            },
+                            "event": "twf:roll",
+                            "target": "self"
+                        }
+                    }
+                ]
+            },                       
+            "minecraft:experience_reward": {
+                "on_death": "(0.0)"
+            }, 
+            "minecraft:knockback_resistance": {
+                "value": 0.01
+            }, 
+            "minecraft:nameable": {},
+            "minecraft:loot": {
+                "table": "loot_tables/entities/twf_dice_white_loot.json"
+            },             
+            "minecraft:physics": {}
+        }, 
+        "description": {
+            "identifier": "twf:dice_white", 
+            "is_spawnable": true, 
+            "is_summonable": true,
+            "animations": {
+                "lifecycle": "controller.animation.twf_dice.life",
+                "base_pose": "animation.twf_dice.base_pose",
+                "roll": "animation.twf_dice.roll"                
+            },
+            "scripts": {
+                    "animate": [
+                        "lifecycle"
+                    ]
+            }
+        }, 
+        "events": {
+            "minecraft:entity_spawned": {
+                "randomize": [
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_1", "twf:rolling", "twf:event_reset"]
+                         }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_2", "twf:rolling", "twf:event_reset"]
+                         }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_3", "twf:rolling", "twf:event_reset"]
+                         }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_4", "twf:rolling", "twf:event_reset"]
+                        }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_5", "twf:rolling", "twf:event_reset"]
+                        }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_6", "twf:rolling", "twf:event_reset"]
+                        }
+                    }
+                ]
+            
+            },
+            "twf:roll": {
+                "randomize": [
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_1", "twf:rolling"]
+                         }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_2", "twf:rolling"]
+                         }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_3", "twf:rolling"]
+                         }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_4", "twf:rolling"]
+                        }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_5", "twf:rolling"]
+                        }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_6", "twf:rolling"]
+                        }
+                    }
+                ]
+            },
+            "twf:set_1": {            
+                "add": {
+                  "component_groups": [
+                    "twf:colour_1"
+                  ]
+                }                
+            },
+             "twf:set_2": {            
+                "add": {
+                  "component_groups": [
+                    "twf:colour_2"
+                  ]
+                }                
+            },
+            "twf:set_3": {            
+                "add": {
+                  "component_groups": [
+                    "twf:colour_3"
+                  ]
+                }                
+            },
+            "twf:set_4": {            
+                "add": {
+                  "component_groups": [
+                    "twf:colour_4"
+                  ]
+                }                
+            },
+            "twf:set_5": {            
+                "add": {
+                  "component_groups": [
+                    "twf:colour_5"
+                  ]
+                }                
+            },
+            "twf:set_6": {            
+                "add": {
+                  "component_groups": [
+                    "twf:colour_6"
+                  ]
+                }                
+            },            
+            "twf:randomise": {
+                "randomize": [
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_1"]
+                         }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_2"]
+                         }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_3"]
+                         }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_4"]
+                        }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_5"]
+                        }
+                    },
+                    {
+                        "add": {
+                          "component_groups": ["twf:colour_6"]
+                        }
+                    }
+                ]
+            },            
+            "twf:stop": {            
+                "add": {
+                  "component_groups": [
+                    "twf:stopped"
+                  ]
+                }                
+            },
+            "twf:rolled1": {            
+                "add": {
+                  "component_groups": [
+                    "twf:event_rolled1"
+                  ]
+                }                
+            },
+            "twf:rolled2": {            
+                "add": {
+                  "component_groups": [
+                    "twf:event_rolled2"
+                  ]
+                }                
+            },
+            "twf:rolled3": {            
+                "add": {
+                  "component_groups": [
+                    "twf:event_rolled3"
+                  ]
+                }                
+            },
+            "twf:rolled4": {            
+                "add": {
+                  "component_groups": [
+                    "twf:event_rolled4"
+                  ]
+                }                
+            },
+            "twf:rolled5": {            
+                "add": {
+                  "component_groups": [
+                    "twf:event_rolled5"
+                  ]
+                }                
+            },
+            "twf:rolled6": {            
+                "add": {
+                  "component_groups": [
+                    "twf:event_rolled6"
+                  ]
+                }                
+            },
+            "twf:reset": {
+                "add": {
+                    "component_groups": [
+                        "twf:event_reset"
+                    ]
+                }
+            }
+            
+        }
+    }
+}

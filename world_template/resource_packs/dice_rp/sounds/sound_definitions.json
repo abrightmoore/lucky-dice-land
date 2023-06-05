@@ -1,0 +1,105 @@
+{
+  "sounds.dice.two": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/two/a",
+      "sounds/dice/two/b",
+      "sounds/dice/two/c",
+      "sounds/dice/two/d",
+      "sounds/dice/two/e"
+    ]
+  },
+  "sounds.dice.three": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/three/a",
+      "sounds/dice/three/b",
+      "sounds/dice/three/c",
+      "sounds/dice/three/d"
+    ]
+  },
+  "sounds.dice.four": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/four/a",
+      "sounds/dice/four/b",
+      "sounds/dice/four/c",
+      "sounds/dice/four/d"
+    ]
+  },
+  "sounds.dice.five": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/five/a",
+      "sounds/dice/five/b",
+      "sounds/dice/five/c",
+      "sounds/dice/five/d"
+    ]
+  }, 
+  "sounds.dice.six": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/six/a",
+      "sounds/dice/six/b",
+      "sounds/dice/six/c",
+      "sounds/dice/six/d",
+      "sounds/dice/six/e"
+    ]
+  },
+  "sounds.dice.seven": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/seven/a",
+      "sounds/dice/seven/b",
+      "sounds/dice/seven/c",
+      "sounds/dice/seven/d"
+    ]
+  },
+  "sounds.dice.eight": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/eight/a",
+      "sounds/dice/eight/b",
+      "sounds/dice/eight/c",
+      "sounds/dice/eight/d"
+    ]
+  },
+  "sounds.dice.nine": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/nine/a",
+      "sounds/dice/nine/b",
+      "sounds/dice/nine/c",
+      "sounds/dice/nine/d"
+    ]
+  },
+  "sounds.dice.ten": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/ten/a",
+      "sounds/dice/ten/b",
+      "sounds/dice/ten/c",
+      "sounds/dice/ten/d"
+    ]
+  },
+  "sounds.dice.eleven": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/eleven/a",
+      "sounds/dice/eleven/b",
+      "sounds/dice/eleven/c",
+      "sounds/dice/eleven/d",
+      "sounds/dice/eleven/e"
+    ]
+  },
+  "sounds.dice.twelve": {
+    "category": "ui",
+    "sounds": [
+      "sounds/dice/twelve/a",
+      "sounds/dice/twelve/b",
+      "sounds/dice/twelve/c",
+      "sounds/dice/twelve/d",
+      "sounds/dice/twelve/e"
+    ]
+  }
+}

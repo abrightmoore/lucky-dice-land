@@ -1,0 +1,27 @@
+{
+    "format_version": "1.8.0", 
+    "minecraft:spawn_rules": {
+        "conditions": [
+            {
+                "minecraft:biome_filter": {
+                    "operator": "!=", 
+                    "test": "has_biome_tag", 
+                    "value": "ocean"
+                }, 
+                "minecraft:brightness_filter": {
+                    "adjust_for_weather": false, 
+                    "max": 15, 
+                    "min": 5
+                }, 
+                "minecraft:spawns_on_surface": {}, 
+                "minecraft:weight": {
+                    "default": 4
+                }
+            }
+        ], 
+        "description": {
+            "identifier": "twf:dice_red", 
+            "population_control": "animal"
+        }
+    }
+}

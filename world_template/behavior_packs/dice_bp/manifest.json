@@ -1,0 +1,23 @@
+{
+	"dependencies": [
+		{
+			"uuid": "9e52fd38-e64f-b87b-a31d-b8c2973d4bc0",
+			"version": [1, 0, 0]
+		}
+	],
+	"format_version": 2,
+	"header": {
+		"description": "pack.description",
+		"min_engine_version": [1, 16, 0],
+		"name": "pack.name",
+		"uuid": "d47e5095-f098-7124-772a-b483fdd2a73a",
+		"version": [1, 0, 0]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "d0773d01-5c39-e09d-04db-1452cdb24d64",
+			"version": [1, 0, 0]
+		}
+	]
+}

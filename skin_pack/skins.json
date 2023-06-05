@@ -1,0 +1,114 @@
+{
+  "skins": [
+    {
+      "localization_name": "s_kin_a115",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_a115.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_a150",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_a150.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_a25",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_a25.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_b123",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_b123.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_b160",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_b160.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_b26",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_b26.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_c124",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_c124.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_c161",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_c161.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_c33",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_c33.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "s_kin_d125",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_d125.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_d163",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_d163.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_d40",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_d40.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "s_kin_e127",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_e127.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_e178",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_e178.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_e43",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_e43.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_f128",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_f128.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_f191",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_f191.png",
+      "type": "paid"
+    },
+    {
+      "localization_name": "s_kin_f45",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "s_kin_f45.png",
+      "type": "paid"
+    }
+  ],
+  "serialize_name": "TWF_LuckyDiceLand",
+  "localization_name": "TWF_LuckyDiceLand"
+}
